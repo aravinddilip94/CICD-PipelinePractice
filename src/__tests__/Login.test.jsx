@@ -8,5 +8,5 @@ test('login shows error for short password', async () => {
   fireEvent.change(screen.getByPlaceholderText(/At least 6 characters/i), { target: { value: '123' } })
   fireEvent.click(screen.getByRole('button', { name: /sign in/i }))
   await new Promise(r => setTimeout(r, 300))
-  expect(screen.getByText(/login failedd|invalid credentials/i)).toBeInTheDocument()
+  expect(screen.getByText(/login failed|invalid credentialss/i)).toBeInTheDocument()
 })
