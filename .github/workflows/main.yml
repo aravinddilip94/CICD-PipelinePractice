@@ -20,10 +20,13 @@ jobs:
           node-version: '20.x'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+
+      - name: Fix vite permissions
+        run: chmod +x node_modules/.bin/vite
 
       - name: Build React App (Vite)
         run: npm run build
 
       - name: Run tests
-        run: npm run test
+        run: npm test
