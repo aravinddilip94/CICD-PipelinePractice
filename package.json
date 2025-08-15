@@ -1,0 +1,46 @@
+{
+  "name": "react-login-sine-profiles",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.25.1",
+    "react-chartjs-2": "^5.2.0",
+    "chart.js": "^4.4.3",
+    "react-webcam": "^7.2.0"
+  },
+  "devDependencies": {
+    "vite": "^5.3.3",
+    "@vitejs/plugin-react": "^4.3.1",
+    "tailwindcss": "^3.4.9",
+    "postcss": "^8.4.41",
+    "autoprefixer": "^10.4.20",
+    "jest": "^29.7.0",
+    "babel-jest": "^29.7.0",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
+    "@testing-library/react": "^15.0.7",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/user-event": "^14.5.2",
+    "jest-environment-jsdom": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "transform": {
+      "^.+\\.(js|jsx)$": "babel-jest"
+    },
+    "moduleNameMapper": {
+      "\\.(css|less|scss)$": "<rootDir>/styleMock.js"
+    },
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ]
+  }
+}
